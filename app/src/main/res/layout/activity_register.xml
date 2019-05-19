@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <ImageButton
+                android:id="@+id/reg_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="100dp"
+                android:src="@drawable/ic_person_outline_black_24dp"
+                android:background="@color/colorPrimary"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/reg_firstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Firtsname"
+                android:layout_below="@id/reg_photo"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/reg_lastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Lastname"
+                android:layout_below="@id/reg_firstName"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/reg_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:layout_below="@id/reg_lastName"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/reg_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:layout_below="@id/reg_email"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/reg_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:layout_below="@id/reg_password"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/reg_role"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Role"
+                android:layout_below="@id/reg_phone"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/reg_twitter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Twitter"
+                android:layout_below="@id/reg_role"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/reg_linkedin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="LinkedIn"
+                android:layout_below="@id/reg_twitter"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/reg_website"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Website"
+                android:layout_below="@id/reg_linkedin"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/register_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:text="Register"
+                android:textColor="@color/colorPrimary"
+                android:layout_below="@id/reg_website"
+                android:layout_marginTop="30dp"/>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/reg_transparent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

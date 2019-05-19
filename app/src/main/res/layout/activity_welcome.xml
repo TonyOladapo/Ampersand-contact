@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_marginTop="100dp"/>
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KEEP IN TOUCH WITH THE PEOPLE OF AMPERSAND"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="16dp"
+            android:layout_centerInParent="true"
+            android:text="Sign in or register with your Ampersand email" />
+
+        <Button
+            android:id="@+id/welcome_reg_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/txt2"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="50dp"
+            android:textColor="@color/colorPrimaryDark"
+            style="?attr/borderlessButtonStyle"/>
+
+        <Button
+            android:id="@+id/welcome_login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign in"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/txt2"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="50dp"
+            android:textColor="@color/colorPrimaryDark"
+            style="?attr/borderlessButtonStyle"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
