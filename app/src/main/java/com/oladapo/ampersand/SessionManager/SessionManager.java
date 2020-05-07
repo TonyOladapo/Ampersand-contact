@@ -114,7 +114,6 @@ public class SessionManager {
             @Override
             public void onSuccess(JSONObject result) {
                 dataCallback.onSuccess(result);
-
                 createSession();
             }
 
